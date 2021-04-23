@@ -1,0 +1,106 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Admin.master.cs" Inherits="DiziBlogProje.Admin" %>
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>PANEL</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <link href="../web/css/bootstrap.css" rel="stylesheet" />
+    <link href="../web/css/style.css" rel="stylesheet" />
+    
+
+	
+    
+
+<style>
+    
+    .customers {
+     
+      margin-left:auto;
+      margin-right:auto;
+      font-family: Arial, Helvetica, sans-serif;
+      border-collapse: collapse;
+      width: 80%;
+    }
+
+    .customers td, .customers th {
+      border: 1px solid #ddd;
+      padding: 8px;
+    }
+
+    .customers tr:nth-child(even){background-color: #f2f2f2;}
+
+    .customers tr:hover {background-color: #ddd;}
+
+    .customers th {
+      padding-top: 12px;
+      padding-bottom: 12px;
+      text-align: left;
+      background-color: #4CAF50;
+      color: white;
+    }
+
+    * {
+        box-sizing: border-box
+    }
+
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .navbar {
+        width: 100%;
+        background-color: #555;
+        overflow: auto;
+    }
+
+        .navbar a {
+            float: left;
+            padding: 12px;
+            color: white;
+            text-decoration: none;
+            font-size: 17px;
+            width: 25%; /* Four links of equal widths */
+            text-align: center;
+        }
+
+            .navbar a:hover {
+                background-color: #000;
+            }
+
+            .navbar a.active {
+                background-color: #4CAF50;
+            }
+
+    @media screen and (max-width: 500px) {
+        .navbar a {
+            float: none;
+            display: block;
+            width: 100%;
+            text-align: left;
+        }
+    }
+</style>
+
+ <!-- css files -->
+    <link href="web/css/bootstrap.css" rel='stylesheet' type='text/css' /><!-- bootstrap css -->
+    <link href="web/css/style.css" rel='stylesheet' type='text/css' /><!-- custom css -->
+    
+	<!-- //css files -->
+
+</head>
+<body>
+    <div class="navbar">
+        <a class="active" href="/adminSayfalar/Bloglar.aspx">BLOGLAR</a>
+        <a href="/adminSayfalar/Yorumlar.aspx">Yorumlar</a>
+        <a href="#">Mesajlar</a>
+        <a href="istatistik.aspx">İstatistik</a>
+    </div>
+
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+
+
+    </asp:ContentPlaceHolder>
+</body>
+</html> 
